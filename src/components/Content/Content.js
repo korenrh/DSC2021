@@ -2,20 +2,16 @@ import React, { Component } from 'react';
 import './Content.css';
 
 class Content extends Component {
-    state = { clicked: false}
-
-    handleClick = () => {
-        this.setState({ clicked: !this.state.clicked})
-    }
 
     render() {
+        this.state = { open: false };
         return(
             <div>
                 <article className="post" id="index">
                     <h2>Hello!</h2>
                     <p>We are Team Gans, a group of motivated computer science students attending Vanderbilt University.  
                     We came together through our Google Developer Student Club chapter and decided to create this project.</p>
-                    <div className="title">
+                    <div>
                     <h2>Our Mission</h2>
 
                     <p>Our goal is to responsibly educate and raise awareness of AI ethics. 
@@ -51,8 +47,9 @@ class Content extends Component {
                     <p>Invisible Women: Data Bias in a World Designed for Men by Caroline Criado Perez</p>
             </article>
             </div>
+
         )
     }
 }
 
-export default Content
+export default Content;
