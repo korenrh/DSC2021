@@ -7,7 +7,7 @@ import ErrorPage from './components/pages/error.jsx';
 import LearnPage from './components/pages/learn.jsx';
 import CreatePage from './components/pages/create.jsx';
 import EthicsPage from './components/pages/ethics.jsx';
-import { BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 
 
 class App extends Component {
