@@ -4,20 +4,9 @@ import './Content.css';
 class Content extends Component {
 
     render() {
-        this.state = { open: false };
         return(
             <div>
                 <article className="post" id="index">
-                    <h2>Hello!</h2>
-                    <p>We are Team Gans, a group of motivated computer science students attending Vanderbilt University.  
-                    We came together through our Google Developer Student Club chapter and decided to create this project.</p>
-                    <div>
-                    <h2>Our Mission</h2>
-
-                    <p>Our goal is to responsibly educate and raise awareness of AI ethics. 
-                        Having an understanding of how data is used to make predictions allows you to really consider critically how important your data is to others, such as companies and governments, and how they might use it, and also what the limitations of systems are that are used to make consequential decisions about your lives. 
-                        We couldn’t think of a better way to learn those skills than through art.</p>
-                    </div>
                     <div>
                     <h2>Ethics of Artificial Intelligence and Art</h2>
 
@@ -53,13 +42,6 @@ class Content extends Component {
                         AI has the power to uplift humanity if done correctly. 
                         Humans are capable of moral imagination, and it’s imperative that we are actively choosing to embed better values into our algorithms to ensure a more equitable society. 
                     </p>
-
-                    <p>
-                        If you’d like to learn more, further reading on bias and its impact on algorithms and society can be found in the following books:
-                    </p>
-                    <p>Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy by Cathy O'Neil<br></br></p>
-                    <p>Hello World: Being Human in the Age of Algorithms by Hannah Fry<br></br></p>
-                    <p>Invisible Women: Data Bias in a World Designed for Men by Caroline Criado Perez</p>
             </article>
             </div>
 

@@ -5,13 +5,13 @@ export const MenuItems = [
         cName: 'nav-links'
     },
     {
-        title: 'How It Works',
-        url: '/how/',
+        title: 'Ethics of AI',
+        url: '/ethics/',
         cName: 'nav-links'
     },
     {
-        title: 'About Us',
-        url: '/about/',
+        title: 'Learn More',
+        url: '/learn/',
         cName: 'nav-links'
     }
 ]

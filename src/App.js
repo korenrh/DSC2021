@@ -4,9 +4,9 @@ import React, { Component } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import HomePage from './index.jsx';
 import ErrorPage from './components/pages/error.jsx';
-import AboutPage from './components/pages/about.jsx';
+import LearnPage from './components/pages/learn.jsx';
 import CreatePage from './components/pages/create.jsx';
-import HowPage from './components/pages/how.jsx';
+import EthicsPage from './components/pages/ethics.jsx';
 import { BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-router-dom";
 
 
@@ -46,8 +46,8 @@ class App extends Component {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/create" component={CreatePage} />
-        <Route exact path="/how" component={HowPage} />
-        <Route exact path="/about" component={AboutPage} />
+        <Route exact path="/ethics" component={EthicsPage} />
+        <Route exact path="/learn" component={LearnPage} />
         <Route exact path= "/404/" component={ErrorPage}/>
         <Redirect to="/404/"/>
       </Switch>
