@@ -38,10 +38,6 @@ class App extends Component {
     <Router> 
       <div className="App">
           <Navbar></Navbar> 
-          <button className='button' onClick={this.handleClick}>
-            Click Me
-          </button>
-          <p>{this.state.username}</p>
       </div>
       <Switch>
         <Route exact path="/" component={HomePage} />

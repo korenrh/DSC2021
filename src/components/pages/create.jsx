@@ -83,18 +83,22 @@ class CreatePage extends Component {
     this.handleClick = this.handleClick.bind(this)
   }
 
+   handleClick () {
+      const image = { image: 'https://cdn.logo.com/hotlink-ok/logo-social.png'};
+      const headers = { 
+          'Authorization': 'quickstart-QUdJIGlzIGNvbWluZy4uLi4K'
+      };
+      axios.post('https://api.deepai.org/api/deepdream', image, { headers })
+          .then(response => console.log("Success"));
+  }
+ 
   /* handleClick () {
-    axios.get('https://api.github.com/users/maecapozzi')
-      .then(response => this.setState({username: response.data.name}))
-    }
- */
-  handleClick () {
     axios.defaults.headers.common['Authorization'] = 'quickstart-QUdJIGlzIGNvbWluZy4uLi4K';
     axios.post('https://api.deepai.org/api/deepdream', {
       image: 'https://cdn.logo.com/hotlink-ok/logo-social.png'
     })
       .then(response => console.log("Success"))
-  }
+  } */
 
   render() {
     return (
